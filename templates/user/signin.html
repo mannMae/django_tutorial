@@ -1,0 +1,24 @@
+{% extends 'base.html'%} {% block title %} 로그인 {% endblock %}
+<div></div>
+{% block content %}
+<div>
+  <div>
+    <h2>로그인</h2>
+    <form>
+      <div>
+        <label for="username">이름</label>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" />
+      </div>
+      <hr />
+      <div>
+        <button type="submit">로그인</button>
+        <a href="/sign-up">회원가입 페이지로 이동</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

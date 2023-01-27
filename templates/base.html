@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %} | BOARD</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">BOARD</a>
+      <div>
+        <ul>
+          <li>
+            <a>Friends</a>
+          </li>
+        </ul>
+      </div>
+      <form>
+        <ul>
+          <li>
+            <a href="/sign-in">Sign In</a>
+          </li>
+          <li>
+            <a href="/sign-up">Sign Up</a>
+          </li>
+        </ul>
+      </form>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>
